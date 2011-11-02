@@ -1,80 +1,66 @@
-  <body id="register">
-	<div class="container">
-		<div class="row">
-			<div class="span6">
-					<img src="http://beebuzz.com/wp-content/uploads/2011/08/beebuzz_tmp_logo.png">
-					<form action="languagepick.html" class="form-stacked">
-						<fieldset>
-							<legend>Register for BeeBuzz:</legend>
-							<div class="clearfix">
-								<label>Name :</label>
-									<div class="input">
-										<input type="text" name="name"><br>
-									</div>
-							</div>
-							<div class="clearfix">
-								<label>Email :</label>
-									<div class="input">
-										<input type="text" name="name"><br>
-									</div>
-							</div>
-							<div class="clearfix">
-								<label>Password :</label>
-									<div class="input">
-										<input type="password" name="name"><br>
-									</div>
-							</div>
-							<div class="clearfix">
-								<label>First Child's Name :</label>
-									<div class="input">
-										<input type="text" name="name"><br>
-									</div>
-							</div>
-							<div class="clearfix">
-								<label>Second Child's Name :</label>
-									<div class="input">
-										<input type="text" name="name"><br>
-									</div>
-							</div>
-							<div class="action">
-								<input class="btn primary" type="submit" value="Register">
-							</div>
-						</fieldset>
-					</form>
-					<form action="languagepick.html" class="form-stacked">
-						<fieldset>
-							<legend>Or log in:</legend>
-							<div class="clearfix">
-								<label>Email :</label>
-									<div class="input">
-										<input type="text" name="name"><br>
-									</div>
-							</div>
-							<div class="clearfix">
-								<label>Password :</label>
-									<div class="input">
-										<input type="password" name="name"><br>
-									</div>
-							</div>
-							<div class="action">
-								<input class="btn primary" type="submit" value="Log in">
-							</div>
-						</fieldset>
-					</form>
-					<div>
-					<hr class="hr">
-					Lost password? <%= link_to "Click here" %>. Sign up with <%= link_to "Google" %>, <%= link_to "Facebook" %> or <%= link_to "Twitter" %>.</br>
-					By signing up you agree to BeeBuzz's <%= link_to "Terms and Conditions" %>
-					</div>
-		    </div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="span5"><p></p></div>
-				<div class="span5">
-	<%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
-				</div>
-				<div class="span5"><p></p></div>
+<div>
+	<%= image_tag "beebuzz__logo.png" %>
+	
+	<form action="languagepick.html">
+		Register for BeeBuzz:
+		<div>
+			<label>Name :</label>
+			<div>
+				<input type="text" name="name"><br>
 			</div>
 		</div>
+		<div>
+			<label>Email :</label>
+			<div class="input">
+				<input type="text" name="name"><br>
+			</div>
+		</div>
+		<div>
+			<label>Password :</label>
+			<div class="input">
+				<input type="password" name="name"><br>
+			</div>
+		</div>
+		<div>
+			<label>First Child's Name :</label>
+			<div class="input">
+				<input type="text" name="name"><br>
+			</div>
+		</div>
+		<div>
+			<label>Second Child's Name :</label>
+			<div class="input">
+				<input type="text" name="name"><br>
+			</div>
+		</div>
+		<div>
+			<input class="btn primary" type="submit" value="Register">
+		</div>
+	</form>
+	<form>
+		Or log in:
+		<div>
+			<label>Email :</label>
+			<div class="input">
+				<input type="text" name="name"><br>
+			</div>
+		</div>
+		<div>
+			<label>Password :</label>
+			<div class="input">
+				<input type="password" name="name"><br>
+			</div>
+		</div>
+		<div>
+			<input type="submit" value="Log in">
+		</div>
+	</form>
+	<div>
+		<hr>
+		Lost password? <%= link_to "Click here" %>. Sign up with <%= link_to "Google" %>, <%= link_to "Facebook" %> or <%= link_to "Twitter" %>.</br>
+		By signing up you agree to BeeBuzz's <%= link_to "Terms and Conditions" %>
 	</div>
+</div>
+<div>
+	<%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
+</div>

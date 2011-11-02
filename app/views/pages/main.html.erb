@@ -1,16 +1,12 @@
-<div class="topbar">
-	<div class="fill">
-		<div class="container">
-			<%= link_to "Bienvenue, Erika !" %>
-			<ul>
-				<li><%= link_to "5 BeeBucks", beebucks_path %></li>
-				<li><%= link_to "Your profile", profile_path %></li>
-			</ul>
-		</div>
-	</div>
+<div>
+	<%= link_to "Bienvenue, Erika !" %>
+	<ul>
+		<li><%= link_to "5 BeeBucks", beebucks_path %></li>
+		<li><%= link_to "Your profile", profile_path %></li>
+	</ul>
 </div>
 
-<div class="container">
+<div>
 	<p>
 	Lire une histoire (Read a story)</br>
 	<%= link_to "T'choupi va a la piscine (T'choupi goes to the pool)", story1_path %></br>
@@ -26,5 +22,7 @@
 	<%= link_to "Frere Jacques (Brother Jacques)" %></br>
 	Twinkle twinkle Little Star - Bientot/Coming soon</br>
 	</p>
-	<hr><%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
+	
+	<hr>
+	<%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
 </div>
