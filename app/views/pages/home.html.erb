@@ -1,7 +1,8 @@
 <div id="home">
 	<%= image_tag "beebuzz__logo.png" %>
 </div>
+
 <div class="container">
-		<p><h2>Beebuzz <%= link_to "Wireframe", register_path %></h2></p>
-		<hr><a href="aboutus.html">About us</a> - <a href="contactus.html">Contact us</a> - <a href="">BeeBuzz Blog</a>
-	</div>
+	<p><h2>Beebuzz <%= link_to "Wireframe", register_path %></h2></p>
+	<hr><%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
+</div>

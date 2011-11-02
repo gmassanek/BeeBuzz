@@ -1,8 +1,10 @@
-    <div>
+<div>
 	<p>
-		Bienvenue, Erika ! You have <a href="beebucks.html">5 BeeBucks</a>. (<a href="home.html">Back</a>)
+	Bienvenue, Erika ! You have <%= link_to "5 BeeBucks", beebucks_path %>. (<%= link_to "Back", main_path %>)
+	</p>
+	
 	<p>
-		Your profile:
+	Your profile:
 		<form action="">
 			Name : <input type="text" name="name" value="Erika"><br>
 			Email: <input type=text name="email" value="Bahnik"><br>
@@ -10,6 +12,7 @@
 			Second Child's name: <input type=text name="child2" value=""><br>
 			<input type="submit" value="Update">
 		</form>
+		
 		Update Password:
 		<form action="">
 			Password: <input type="password" name="password"><br>
@@ -17,5 +20,6 @@
 			<input type="submit" value="Update Password">
 		</form>
 	</p>
-	<p><hr><a href="aboutus.html">About us</a> - <a href="contactus.html">Contact us</a> - <a href="">BeeBuzz Blog</a></p>
-    </div>
+	
+	<hr><%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
+</div>

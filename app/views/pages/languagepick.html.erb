@@ -1,52 +1,52 @@
-	<div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="#">Bienvenue, Erika !</a>
-          <ul class="nav">
-            <li><a href="beebucks.html">You have 5 BeeBucks</a></li>
-            <li><a href="profile.html">Your profile</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+<div class="topbar">
+     <div class="fill">
+       <div class="container">
+         <%= link_to "Bienvenue, Erika !" %>
+         <ul>
+           <li><%= link_to "5 BeeBucks", beebucks_path %></li>
+           <li><%= link_to "Your profile", profile_path %></li>
+         </ul>
+       </div>
+     </div>
+   </div>
 
-    <div class="container">
-		<div class="row">
-		    <div class="span5"><p></p></div>
-			<div class="span5">
-					<form action="home.html" class="form-stacked">
-						<fieldset>
-							<legend>Your languages</legend>
-							<div class="clearfix">
-								<label>Choose original language:</label>
-									<div class="input">
-										<select name="language1">
-											<option value="French">French</option>
-											<option value="English">English</option>
-											<option value="None">None</option>
-										</select>
-									</div>
-							</div>
-							<div class="clearfix">
-								<label>Choose translation:</label>
-									<div class="input">
-										<select name="language2">
-											<option value="English">English</option>
-											<option value="French">French</option>
-											<option value="None">None</option>
-										</select>
-									</div>
-							</div>
-							<div class="action">
-								<input class="btn primary" type="submit" value="Register">
-							</div>
-						</fieldset>
-					</form>
-		    </div>
-		    <div class="span5"><p></p></div>
-		</div>
-		<div>
-		<p><h6>(For the purpose of this demo the languages will be French/English)</h6></p>
-		<p><hr><a href="aboutus.html">About us</a> - <a href="contactus.html">Contact us</a> - <a href="">BeeBuzz Blog</a></p>
-		</div>
-    </div>
+   <div class="container">
+	<div class="row">
+	    <div class="span5"><p></p></div>
+		<div class="span5">
+				<form action="home.html" class="form-stacked">
+					<fieldset>
+						<legend>Your languages</legend>
+						<div class="clearfix">
+							<label>Choose original language:</label>
+								<div class="input">
+									<select name="language1">
+										<option value="French">French</option>
+										<option value="English">English</option>
+										<option value="None">None</option>
+									</select>
+								</div>
+						</div>
+						<div class="clearfix">
+							<label>Choose translation:</label>
+								<div class="input">
+									<select name="language2">
+										<option value="English">English</option>
+										<option value="French">French</option>
+										<option value="None">None</option>
+									</select>
+								</div>
+						</div>
+						<div class="action">
+							<input class="btn primary" type="submit" value="Register">
+						</div>
+					</fieldset>
+				</form>
+	    </div>
+	    <div class="span5"><p></p></div>
+	</div>
+	<div>
+	<p><h6>(For the purpose of this demo the languages will be French/English)</h6></p>
+<hr><%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
+	</div>
+   </div>

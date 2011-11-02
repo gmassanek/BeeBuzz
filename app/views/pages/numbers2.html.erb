@@ -1,9 +1,11 @@
-    <div>
-		<p>
-			<h6><a href="home.html">Back to main menu</a></h6></br>
-			<h3>Deux!</h3></br>
-			<h1>2</h1></br>
-			<h3>Two!</h3></br>
-			<h6><a href="numbers1.html">Previous page</a> - <a href="numbers3.html">Next page</a></h6>
-		</p>
-    </div>
+<div>
+	<h6><%= link_to "Back to main menu", main_path %></h6></br>
+	
+	<h3>Deux!</h3></br>
+	
+	<h1>2</h1></br>
+	
+	<h3>Two!</h3></br>
+	
+	<h6><%= link_to "Previous page", numbers1_path %> - <%= link_to "Next page", numbers3_path %></h6>
+</div>

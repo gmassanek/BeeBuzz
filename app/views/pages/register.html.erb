@@ -63,8 +63,8 @@
 					</form>
 					<div>
 					<hr class="hr">
-					Lost password? <a href="">Click here</a>. Sign up with <a href="">Google</a>, <a href="">Facebook</a> or <a href="">Twitter</a>.<br>
-					By signing up you agree to BeeBuzz's <a href="">Terms and Conditions</a>
+					Lost password? <%= link_to "Click here" %>. Sign up with <%= link_to "Google" %>, <%= link_to "Facebook" %> or <%= link_to "Twitter" %>.</br>
+					By signing up you agree to BeeBuzz's <%= link_to "Terms and Conditions" %>
 					</div>
 		    </div>
 		</div>
@@ -72,7 +72,7 @@
 			<div class="row">
 				<div class="span5"><p></p></div>
 				<div class="span5">
-					<a href="aboutus.html">About us</a> - <a href="contactus.html">Contact us</a> - <a href="">BeeBuzz Blog</a>
+	<%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
 				</div>
 				<div class="span5"><p></p></div>
 			</div>

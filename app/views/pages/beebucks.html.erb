@@ -1,15 +1,17 @@
-    <div>
+<div>
 	<p>
-		Bienvenue, Erika ! You have 5 BeeBucks. (<a href="profile.html">Your profile</a>) (<a href="home.html">Back</a>)
-	<p>
-		<a href="">Buy 5 BeeBucks</a>
+	Bienvenue, Erika ! You have 5 BeeBucks. (<%= link_to "Your profile", profile_path %>) (<%= link_to "Back", main_path %>)
 	</p>
 	<p>
-		<a href="">Buy 10 BeeBucks - Get 12!</a>
+	<%= link_to "Buy 5 BeeBucks" %>
 	</p>
 	<p>
-		<a href="">Buy 15 BeeBucks - Get 20!</a>
+	<%= link_to "Buy 10 BeeBucks - Get 12" %>
+	</p>
+	<p>
+	<%= link_to "Buy 15 BeeBucks - Get 20" %>
 	</p>
 	SHOPPING CART HERE
-	<p><hr><a href="aboutus.html">About us</a> - <a href="contactus.html">Contact us</a> - <a href="">BeeBuzz Blog</a></p>
-    </div>
+	
+	<hr><%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
+</div>
