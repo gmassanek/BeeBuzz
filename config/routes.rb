@@ -1,10 +1,21 @@
 Beebuzz::Application.routes.draw do
   root :to => "pages#home"
-  
-  match '/' => 'pages#home', :as => :home
+
   match '/about' => 'pages#about', :as => :about
+  match '/beebucks' => 'pages#beebucks', :as => :beebucks
   match '/contact' => 'pages#contact', :as => :contact
+  match '/main' => 'pages#main', :as => :main
+  match '/' => 'pages#home', :as => :home
+  match '/languagepick' => 'pages#languagepick', :as => :languagepick
+  match '/numbers1' => 'pages#numbers1', :as => :numbers1
+  match '/numbers2' => 'pages#numbers2', :as => :numbers2
+  match '/numbers3' => 'pages#numbers3', :as => :numbers3
   match '/privacy' => 'pages#privacy', :as => :privacy
+  match '/profile' => 'pages#profile', :as => :profile
+  match '/register' => 'pages#register', :as => :register
+  match '/story1' => 'pages#story1', :as => :story1
+  match '/story2' => 'pages#story2', :as => :story2
+  match '/story3' => 'pages#story3', :as => :story3
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
