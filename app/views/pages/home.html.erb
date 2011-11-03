@@ -1,7 +1,16 @@
 <div id="background">
-	<div id="content">
-		<%= image_tag "beebuzz__logo.png" %>
-		<p><h2>Beebuzz <%= link_to "Wireframe", register_path %></h2></p>
-		<hr><%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
+	<div id="box">
+		<%= image_tag "beebuzz__logo.png" %></br>
+		Imagine being in class with your favorite teacher, and the class is held at your favorite amusement park. That's the environment that we're building at BeeBuzz. Parents play a key role in their children's education. We're going to help by providing them with all the tools possible to increase their interactions with their children.</br></br>
+		Sign up here for the beta here:
+		<form action ="">
+			<input type="text_field">
+			<input type="submit" value="submit">
+		</form>
+		Follow us on Twitter: <%= link_to "@beebuzz", "http://www.twitter.com/beebuzz" %></br>
+		Read our blog: <%= link_to "BeeBuzz Blog", "http://beebuzzblog.tumblr.com" %></br>
+		Email us: <%= link_to "Contact Us", contact_path %>
+
+		<%= link_to "Wireframe", register_path %> - <%= link_to "About Us", about_path %>
 	</div>
 </div>

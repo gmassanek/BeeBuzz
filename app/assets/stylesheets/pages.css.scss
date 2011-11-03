@@ -11,13 +11,30 @@
 	width: 100%;
 }
 
-#content {
+#box {
 	/* background-color: #fff; */
 	background-color: rgba(255, 255, 255, 0.75);
-	border:  1px solid #F7DD74;
+	border:  2px solid #F7DD74;
 	border-radius: 10px;
+	font-family: 'Gloria Hallelujah', cursive;
 	height: auto;
 	margin: 0 auto;
+	padding: 6px;
 	text-align: center;
-	width: 690px;
+	width: 479px;
+}
+
+hr {
+	border-bottom: 1px solid #F7DD74;
+	width: 491px;
+	/*margin-left: -10px;*/
+	clear: both;
+	margin-left:-6px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+	
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Gloria Hallelujah', "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;
+	font-weight: normal;
 }

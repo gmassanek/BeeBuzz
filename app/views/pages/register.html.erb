@@ -1,66 +1,23 @@
-<div>
-	<%= image_tag "beebuzz__logo.png" %>
+<div id="background">
+	<div id="box">
+		<%= image_tag "beebuzz__logo.png" %>
 	
-	<form action="languagepick.html">
-		Register for BeeBuzz:
-		<div>
-			<label>Name :</label>
+		<form action="main.html">
+			Register or log in:
 			<div>
-				<input type="text" name="name"><br>
+				<label>Email :</label>
+					<input type="text" name="name"><br>
 			</div>
-		</div>
-		<div>
-			<label>Email :</label>
-			<div class="input">
-				<input type="text" name="name"><br>
+			<div>
+				<label>Password :</label>
+					<input type="password" name="name"><br>
 			</div>
-		</div>
-		<div>
-			<label>Password :</label>
-			<div class="input">
-				<input type="password" name="name"><br>
+			<div>
+				<input type="submit" value="Log in">
 			</div>
-		</div>
+		</form>
 		<div>
-			<label>First Child's Name :</label>
-			<div class="input">
-				<input type="text" name="name"><br>
-			</div>
+			<%= link_to "Contact Us", contact_path %> - <%= link_to "About Us", about_path %> - <%= link_to "BeeBuzz Blog", "http://beebuzzblog.tumblr.com" %>
 		</div>
-		<div>
-			<label>Second Child's Name :</label>
-			<div class="input">
-				<input type="text" name="name"><br>
-			</div>
-		</div>
-		<div>
-			<input class="btn primary" type="submit" value="Register">
-		</div>
-	</form>
-	<form>
-		Or log in:
-		<div>
-			<label>Email :</label>
-			<div class="input">
-				<input type="text" name="name"><br>
-			</div>
-		</div>
-		<div>
-			<label>Password :</label>
-			<div class="input">
-				<input type="password" name="name"><br>
-			</div>
-		</div>
-		<div>
-			<input type="submit" value="Log in">
-		</div>
-	</form>
-	<div>
-		<hr>
-		Lost password? <%= link_to "Click here" %>. Sign up with <%= link_to "Google" %>, <%= link_to "Facebook" %> or <%= link_to "Twitter" %>.</br>
-		By signing up you agree to BeeBuzz's <%= link_to "Terms and Conditions" %>
 	</div>
-</div>
-<div>
-	<%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
 </div>
