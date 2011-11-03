@@ -2,7 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+	display: block;
+	margin: 0px;
+}
+
 #background {
+	background-color: #e3effa;
+	/* background-image:url('../images/WinnieThePoohWallpaper1024.jpg'); */
+	height: 100%;
+	padding-top: 50px;
+	position: absolute;
+	width: 100%;
+}
+
+.container {
 	background-color: #e3effa;
 	/* background-image:url('../images/WinnieThePoohWallpaper1024.jpg'); */
 	height: 100%;
@@ -19,6 +33,7 @@
 	font-family: 'Gloria Hallelujah', cursive;
 	height: auto;
 	margin: 0 auto;
+	margin-bottom: 20px;
 	padding: 6px;
 	text-align: center;
 	width: 479px;
