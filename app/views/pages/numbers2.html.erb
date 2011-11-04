@@ -1,11 +1,20 @@
-<div>
-	<h6><%= link_to "Back to main menu", main_path %></h6></br>
+<div class="container">
+	<div class="box">
+		Bienvenue Erika ! - You have <%= link_to "5 BeeBucks", beebucks_path %> (<%= link_to "Back", main_path %>)
+	</div>
 	
-	<h3>Deux!</h3></br>
+	<div class="box">
+		Deux !
+	</div>
 	
-	<h1>2</h1></br>
+	<div class="box sm">
+		<h2>2</h2>
+	</div>
+	<div class="box">
+		<p class="book-nav"><%= link_to "Previous page", numbers1_path, :class => "previous" %> Two! <%= link_to "Next page", numbers3_path, :class => "next" %></p>
+	</div>
 	
-	<h3>Two!</h3></br>
-	
-	<h6><%= link_to "Previous page", numbers1_path %> - <%= link_to "Next page", numbers3_path %></h6>
+	<div class="box">
+		<%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
+	</div>
 </div>

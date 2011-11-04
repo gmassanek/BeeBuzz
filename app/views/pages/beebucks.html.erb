@@ -1,17 +1,28 @@
-<div>
-	<p>
-	Bienvenue, Erika ! You have 5 BeeBucks. (<%= link_to "Your profile", profile_path %>) (<%= link_to "Back", main_path %>)
-	</p>
-	<p>
-	<%= link_to "Buy 5 BeeBucks" %>
-	</p>
-	<p>
-	<%= link_to "Buy 10 BeeBucks - Get 12" %>
-	</p>
-	<p>
-	<%= link_to "Buy 15 BeeBucks - Get 20" %>
-	</p>
-	SHOPPING CART HERE
-	
-	<hr><%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
+<div class="container">
+	<div class="box">
+		Bienvenue Erika ! - You have <%= link_to "5 BeeBucks", beebucks_path %> (<%= link_to "Back", main_path %>)
+	</div>
+
+	<div class="row">
+		<div class="column">
+			<h3>Buy 5 BeeBucks</h3>
+		</div>
+		<div class="column">
+			<h3>Buy 10 BeeBucks</h3>
+		</div>
+		<div class="column">
+			<h3>Buy 15 BeeBucks</h3>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column">
+			<h3>SHOPPING CART HERE</h3>
+		</div>
+	</div>
+
+	<div class="box">
+		<%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
+	</div>
+</div>
 </div>

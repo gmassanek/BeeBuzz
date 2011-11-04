@@ -3,68 +3,48 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
+	background-color: #e3effa;
 	display: block;
 	margin: 0px;
+	height: 100%;
 }
 
 .row {
 	content: "";
-	display: block;
 	display: table;
-	
 	margin: 0 auto;
 	padding-bottom: 20px;
 	zoom: 1;
 }
 
-.span {
+.column {
+	background-color: rgba(255, 255, 255, 0.80);
+	border: 2px solid #F7DD74;
+	border-radius: 10px;
 	display: inline;
 	float: left;
-	width: 159px;
-	width: 30%;
-}
-
-#background {
-	background-color: #e3effa;
-	/* background-image:url('../images/WinnieThePoohWallpaper1024.jpg'); */
-	height: 100%;
-	padding-top: 50px;
-	position: absolute;
-	width: 100%;
+	height: auto;
+	margin: 5px;
+	padding: 6px;
+	text-align: center;	
+	width: 300px;
 }
 
 .container {
 	background-color: #e3effa;
-	height: 100%;
-	padding-top: 50px;
-	position: absolute;
-	width: 100%;
-}
-
-.container_home {
-	background-color: #e3effa;
-	background-image:image-url("WinnieThePoohWallpaper1024.jpg");
-	height: 100%;
-	padding-top: 50px;
-	position: absolute;
-	width: 100%;
-}
-
-#box_sm {
-	/* background-color: #fff; */
-	background-color: rgba(255, 255, 255, 0.90);
-	border:  2px solid #F7DD74;
-	border-radius: 10px;
 	font-family: 'Gloria Hallelujah', cursive;
-	height: auto;
-	margin: 0 auto;
-	margin-bottom: 20px;
-	padding: 6px;
-	text-align: center;
-	width: 400px;
+	/*height: 100%;*/
+	padding-top: 10px;
+	position: absolute;
+	width: 100%;
 }
 
-#box {
+#home .container {
+	background-image:image-url("WinnieThePoohWallpaper1024.jpg");
+	padding-top: 50px;
+}
+
+.box {
 	/* background-color: #fff; */
 	background-color: rgba(255, 255, 255, 0.75);
 	border:  2px solid #F7DD74;
@@ -78,17 +58,27 @@ body {
 	width: 960px;
 }
 
-hr {
-	border-bottom: 1px solid #F7DD74;
-	width: 491px;
-	/*margin-left: -10px;*/
-	clear: both;
-	margin-left:-6px;
-	margin-top: 6px;
-	margin-bottom: 6px;
+.box.sm {
+	background-color: rgba(255, 255, 255, 0.90);
+	width: 400px;
 }
-	
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Gloria Hallelujah', "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;
-	font-weight: normal;
+
+.block {
+	background-color: #F7DD74;
+	border:  2px solid #b9a557;
+	border-radius: 10px;
+	display: block;
+	margin: 6px;
+	padding: 3px;
+}
+
+.book-nav {
+	padding: 0 10px;
+}
+
+.book-nav .previous {
+	float: left;
+}
+.book-nav .next {
+	float: right;
 }

@@ -1,27 +1,39 @@
 <div class="container">
-	<div id="box">
+	<div class="box">
 		Bienvenue Erika ! - You have <%= link_to "5 BeeBucks", beebucks_path %> (<%= link_to "Your account", profile_path %>)
 	</div>
 	
 	<div class="row">
-		<div class="span">
-			Lire une histoire (Read a story)</br>
-			<%= link_to "T'choupi va a la piscine (T'choupi goes to the pool)", story1_path %></br>
-			T'choupi s'habille tout seul (T'choupi gets dressed all by himself) - Bientot/Coming soon
+		<div class="column">
+			<h3>Lire une histoire (Read a story):</h3>
+			<div class="block">
+				<%= link_to "T'choupi va a la piscine (T'choupi goes to the pool)", story1_path %>
+			</div>
+			<div class="block">
+				T'choupi s'habille tout seul (T'choupi gets dressed all by himself) - Bientot/Coming soon
+			</div>
 		</div>
-		<div class="span">
-			Apprendre des mots (Learn new words):</br>
-			<%= link_to "Les chiffres (Numbers)", numbers1_path %></br>
-			Les lettres (Letters) - Bientot/Coming soon
+		<div class="column">
+			<h3>Apprendre des mots (Learn new words):</h3>
+			<div class="block">
+				<%= link_to "Les chiffres (Numbers)", numbers1_path %>
+			</div>
+			<div class="block">
+				Les lettres (Letters) - Bientot/Coming soon
+			</div>
 		</div>
-		<div class="span">
-			Ecouter une contine (Listen to a lullaby):</br>
-			<%= link_to "Frere Jacques (Brother Jacques)" %></br>
-			Twinkle twinkle Little Star - Bientot/Coming soon
+		<div class="column">
+			<h3>Ecouter une contine (Listen to a lullaby):</h3>
+			<div class="block">
+				Frere Jacques (Brother Jacques)
+			</div>
+			<div class="block">
+				Twinkle twinkle Little Star - Bientot/Coming soon
+			</div>
 		</div>
 	</div>
 
-	<div id="box">
+	<div class="box">
 		<%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
 	</div>
 </div>

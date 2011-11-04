@@ -1,15 +1,31 @@
-<div>
-	<h6><%= link_to "Back to main menu", main_path %></h6></br>
+<div class="container">
+	<div class="box">
+		Bienvenue Erika ! - You have <%= link_to "5 BeeBucks", beebucks_path %> (<%= link_to "Back", main_path %>)
+	</div>
 	
-	<h3>T'choupi enfile ses brassards et hop ! il va dans l'eau.</br>
-	- Papi, regarde comme je nage vite !</br>
-	- Bravo ! Essaie sans la planche  maintenant . . .</h3>
+	<div class="box">
+		T'choupi enfile ses brassards et hop ! il va dans l'eau.</br>
+		- Papi, regarde comme je nage vite !</br>
+		- Bravo ! Essaie sans la planche  maintenant . . .
+	</div>
 	
+	<div class="box sm">
+		<%= image_tag "IMG_0005.jpg" %>
+	</div>
+	<div class="box">
+		<p class="book-nav"><%= link_to "Previous page", main_path, :class => "previous" %> T'choupi puts on his buoys et jumps in the water!</br>
+		- Grandpa, look how fast I can swim !</br>
+		- Very nice ! Try without the plank now . . . <%= link_to "Next page", story2_path, :class => "next" %></p>
+	</div>
+	
+	<div class="box">
+		<%= link_to "About Us", about_path %> - <%= link_to "Contact us", contact_path %> - <%= link_to "BeeBuzz Blog", "http://jeanbahnik.com" %>
+	</div>
+</div>
+
 	<img src="IMG_0005.jpg"></br>
 	
-	<h3>T'choupi puts on his buoys et jumps in the water!</br>
-	- Grandpa, look how fast I can swim !</br>
-	- Very nice ! Try without the plank now . . .</h3></br>
+	<h3></h3></br>
 	
 	<h6><%= link_to "Next page", story2_path %></h6>
 </div>
